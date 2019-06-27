@@ -1,0 +1,803 @@
+
+* {
+	margin: 0;
+}
+
+*,
+
+*:before,
+
+*:after {
+
+	box-sizing: inherit;
+
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+
+samp,small,strike,strong,sub,
+sup,
+tt,
+
+var,
+
+b,
+
+u,
+
+i,
+
+center,
+
+dl,
+
+dt,
+
+dd,
+
+ol,
+
+ul,
+
+li,
+
+fieldset,
+
+form,label,legend,
+
+table,
+
+caption,
+
+tbody,
+
+tfoot,
+
+thead,
+
+tr,
+
+th,
+
+td,
+
+article,
+
+aside,
+
+canvas,
+
+details,
+
+embed,
+
+figure,
+
+figcaption,
+
+footer,
+
+header,
+
+hgroup,
+
+menu,
+
+nav,
+
+output,
+
+ruby,
+
+section,
+
+summary,
+
+time,
+
+mark,
+audio,
+video,
+main,
+input,
+
+textarea {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+	font-size: 100%;
+
+	font: inherit;
+
+}
+
+article,
+
+aside,
+
+details,
+
+figcaption,
+
+figure,
+
+footer,
+
+header,
+
+hgroup,
+
+menu,
+
+nav,
+
+section,
+
+main {
+
+	display: block;
+
+}
+
+
+
+ol,
+
+ul {
+
+	list-style: none;
+
+}
+
+
+
+table {
+
+	border-collapse: collapse;
+
+	border-spacing: 0;
+
+}
+
+
+
+html {
+
+	overflow-y: -moz-scrollbars-vertical;
+
+	overflow-y: scroll;
+
+	overflow-x: hidden;
+
+	box-sizing: border-box;
+
+}
+
+
+
+.cf:before,
+
+.cf:after {
+
+	content: "";
+
+	display: table;
+
+}
+
+
+
+.cf:after {
+
+	clear: both;
+
+}
+
+
+
+.cf {
+
+	zoom: 1;
+
+}
+
+
+
+/*
+
+ * Grid
+
+ * @author Viktor Resler <vr@xport.de>, Rico Dang <rd@xport.de
+
+ * @since 05.12.18
+
+ */
+
+ 
+
+
+/* Grid */
+
+.container {
+
+	width: 100%;
+
+	margin-left: 0;
+
+	margin-right: 0;
+
+}
+
+
+
+.wrapper {
+
+	width: 1180px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+}
+
+
+
+.row {
+
+	padding-left: 15px;
+
+	padding-right: 15px;
+
+	position: relative;
+
+}
+
+
+
+.m-center {
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+}
+
+
+
+.center {
+
+	text-align: center;
+
+}
+
+
+
+.fl {
+
+	float: left;
+
+}
+
+
+
+.fr {
+
+	float: right;
+
+}
+
+
+
+/* screen large */
+
+.xlg1 {
+
+	width: 8.333%;
+
+}
+
+
+
+.xlg2 {
+
+	width: 16.666%;
+
+}
+
+
+
+.xlg3 {
+
+	width: 24.999%;
+
+}
+
+
+
+.xlg4 {
+
+	width: 33.333%;
+
+}
+
+
+
+.xlg5 {
+
+	width: 41.666%;
+
+}
+
+
+
+.xlg6 {
+
+	width: 49.999%;
+
+}
+
+
+
+.xlg7 {
+
+	width: 58.333%;
+
+}
+
+
+
+.xlg8 {
+
+	width: 66.666%;
+
+}
+
+
+
+.xlg9 {
+
+	width: 74.999%;
+
+}
+
+
+
+.xlg10 {
+
+	width: 83.333%;
+
+}
+
+
+
+.xlg11 {
+
+	width: 91.666%;
+
+}
+
+
+
+.xlg12 {
+
+	width: 100%;
+
+}
+
+
+
+.xlg-hide {
+
+	display: none;
+
+}
+
+
+
+.xlg-show {
+
+	display: block;
+
+}
+
+
+
+/* screen medium */
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+
+	.wrapper {
+
+		width: 960px;
+
+	}
+
+
+
+	.lg1 {
+
+		width: 8.333%;
+
+	}
+
+
+
+	.lg2 {
+
+		width: 16.666%;
+
+	}
+
+
+
+	.lg3 {
+
+		width: 24.999%;
+
+	}
+
+
+
+	.lg4 {
+
+		width: 33.333%;
+
+	}
+
+
+
+	.lg5 {
+
+		width: 41.666%;
+
+	}
+
+
+
+	.lg6 {
+
+		width: 49.999%;
+
+	}
+
+
+
+	.lg7 {
+
+		width: 58.333%;
+
+	}
+
+
+
+	.lg8 {
+
+		width: 66.666%;
+
+	}
+
+
+
+	.lg9 {
+
+		width: 74.999%;
+
+	}
+
+
+
+	.lg10 {
+
+		width: 83.333%;
+
+	}
+
+
+
+	.lg11 {
+
+		width: 91.666%;
+
+	}
+
+
+
+	.lg12 {
+
+		width: 100%;
+
+	}
+
+
+
+	.lg-hide {
+
+		display: none;
+
+	}
+
+
+
+	.lg-show {
+
+		display: block;
+
+	}
+
+}
+
+
+
+/* tablet */
+
+@media screen and (min-width: 740px) and (max-width: 980px) {
+
+	.wrapper {
+
+		width: 720px;
+
+	}
+
+
+
+	.md1 {
+
+		width: 8.333%;
+
+	}
+
+
+
+	.md2 {
+
+		width: 16.666%;
+
+	}
+
+
+
+	.md3 {
+
+		width: 24.999%;
+
+	}
+
+
+
+	.md4 {
+
+		width: 33.333%;
+
+	}
+
+
+
+	.md5 {
+
+		width: 41.666%;
+
+	}
+
+
+
+	.md6 {
+
+		width: 49.999%;
+
+	}
+
+
+
+	.md7 {
+
+		width: 58.333%;
+
+	}
+
+
+
+	.md8 {
+
+		width: 66.666%;
+
+	}
+
+
+
+	.md9 {
+
+		width: 74.999%;
+
+	}
+
+
+
+	.md10 {
+
+		width: 83.333%;
+
+	}
+
+
+
+	.md11 {
+
+		width: 91.666%;
+
+	}
+
+
+
+	.md12 {
+
+		width: 100%;
+
+	}
+
+
+
+	.md-hide {
+
+		display: none;
+
+	}
+
+
+
+	.md-show {
+
+		display: block;
+
+	}
+
+}
+
+
+
+/* mobile */
+
+@media only screen and (min-width: 18.75em) and (max-width: 740px) {
+
+	.wrapper {
+
+		width: 98%;
+
+	}
+
+
+
+	.sm1 {
+
+		width: 8.333%;
+
+	}
+
+
+
+	.sm2 {
+
+		width: 16.666%;
+
+	}
+
+
+
+	.sm3 {
+
+		width: 24.999%;
+
+	}
+
+
+
+	.sm4 {
+
+		width: 33.333%;
+
+	}
+
+
+
+	.sm5 {
+
+		width: 41.666%;
+
+	}
+
+
+
+	.sm6 {
+
+		width: 49.999%;
+
+	}
+
+
+
+	.sm7 {
+
+		width: 58.333%;
+
+	}
+
+
+
+	.sm8 {
+
+		width: 66.666%;
+
+	}
+
+
+
+	.sm9 {
+
+		width: 74.999%;
+
+	}
+
+
+
+	.sm10 {
+
+		width: 83.333%;
+
+	}
+	.sm11 {
+
+		width: 91.666%;
+
+	}
+	.sm12 {
+		width: 100%;
+
+	}
+
+	.sm-hide {
+		display: none;
+	}
+	.sm-show {
+
+		display: block;
+
+	}
+.social-wall .social-wrapper {
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+}
+}
